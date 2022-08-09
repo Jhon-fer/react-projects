@@ -1,0 +1,156 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+  min-width: 288px;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container__counter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container__counter h4, .container__counter p  {
+  margin-bottom: 40px;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.container__tickets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.container__tickets h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container__tickets-buy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container__tickets-buy button {
+  margin: 0 20px;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #000;
+  background-color: #fff;
+}
+
+.container__tickets-buy button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+.container__tickets-buy p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.container__pay {
+  text-align: center;
+}
+
+.container__pay h4 {
+  margin: 30px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.container__pay button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+
+.container__pay button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+.totalPrice {
+  margin: 15px 0;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 600px)  {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 720px;
+  }
+
+  .container__counter {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 33.33%;
+  }
+
+  .container__counter h4 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .container__counter p {
+    margin: 0;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .container__tickets {
+    margin: 0;
+    padding: 0;
+    width: 33.33%;
+  }
+
+  .container__tickets h4 {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  .container__pay {
+    margin: 0;
+    padding: 0;
+    width: 33.33%;
+  }
+
+  .container__pay h4 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}
