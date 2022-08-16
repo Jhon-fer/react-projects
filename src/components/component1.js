@@ -8,7 +8,7 @@ const CardComponent = props => {
 
   // change quantity and value of product
   const unitsAvailable = 10;
-  const saleprice = 1200;
+  const salePrice = 1200;
 
   const addAmount = () => {
     if (amount < unitsAvailable) {
@@ -25,7 +25,7 @@ const CardComponent = props => {
   
   const onBuy = () => {
     setPrice(
-      `Valor de la compra: ${new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0}).format(amount * saleprice)}`
+      `Valor de la compra: ${new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0}).format(amount * salePrice)}`
     );
   }
 
